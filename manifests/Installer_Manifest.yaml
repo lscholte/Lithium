@@ -7,3 +7,12 @@ Packages:
     Changelog:
       - Forked from Helium theme
       - Modified grid view hover buttons to be more visible
+  - Version: 1.0.1
+    RequiredApiVersion: 2.6.0
+    ReleaseDate: 2024-01-19
+    PackageUrl: https://github.com/lscholte/Lithium/releases/download/1.0/Lithium_c2635228-430a-4ef0-9a0f-0219e1e1c53c_1_0_1.pthm
+    Changelog:
+      - Restyles grid view zoom slider
+      - Menu item mouse hover highlighting effect takes full width of the menu item
+      - Checkmark for menu item remains visible when hovering mouse over the menu item
+      - Removes shine animation when hovering mouse over a game in grid view
