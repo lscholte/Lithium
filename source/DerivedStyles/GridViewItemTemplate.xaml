@@ -84,8 +84,7 @@
                                 <TextBlock Name="EnablePlayingGlowBorder" Visibility="Collapsed"
                                                 Tag="{DynamicResource GridViewEnablePlayingGlowBorder}" />
                                 <Border Name="ShineBackground" Tag="False" IsHitTestVisible="False"
-                                            CornerRadius="{Binding ElementName=Mask, Path=CornerRadius}"
-                                            Style="{DynamicResource AnimatedCoverShineBackground}" />
+                                            CornerRadius="{Binding ElementName=Mask, Path=CornerRadius}" />
                                 <TextBlock Name="EnableHighlightAnimation" Visibility="Collapsed"
                                                 Tag="{DynamicResource GridViewEnableCoverShineAnimation}" />
 
@@ -325,100 +324,6 @@
                 </DataTrigger.EnterActions>
                 <DataTrigger.ExitActions>
                     <RemoveStoryboard BeginStoryboardName="Animation"/>
-                </DataTrigger.ExitActions>
-            </DataTrigger>
-        </Style.Triggers>
-    </Style>
-    
-    <Style x:Key="AnimatedCoverShineBackground" TargetType="Border">
-        <Setter Property="Opacity" Value="0.00" />
-        <Setter Property="Background">
-            <Setter.Value>
-                <LinearGradientBrush StartPoint="1.0, 0.0" EndPoint="0.07, 1.0">
-                    <GradientStop Color="#00d2d2d2" Offset="-0.10" />
-                    <GradientStop Color="#59d2d2d2" Offset="0.18"/>
-                    <GradientStop Color="#59d2d2d2" Offset="0.22" />
-                    <GradientStop Color="Transparent" Offset="0.25" />
-                </LinearGradientBrush>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="True">
-                <DataTrigger.EnterActions>
-                    <BeginStoryboard>
-                        <Storyboard Timeline.DesiredFrameRate="20">
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Opacity"
-                                    To="0.90"
-                                    Duration="0:0:0.5">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Background.(GradientBrush.GradientStops)[1].(GradientStop.Offset)"
-                                    To="0.35"
-                                    Duration="0:0:0.5">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Background.(GradientBrush.GradientStops)[2].(GradientStop.Offset)"
-                                    To="0.40"
-                                    Duration="0:0:0.5">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Background.(GradientBrush.GradientStops)[3].(GradientStop.Offset)"
-                                    To="0.48"
-                                    Duration="0:0:0.5">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </DataTrigger.EnterActions>
-                <DataTrigger.ExitActions>
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Opacity"
-                                    To="0.00"
-                                    Duration="0:0:0.4">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Background.(GradientBrush.GradientStops)[1].(GradientStop.Offset)"
-                                    To="0.18"
-                                    Duration="0:0:0.4">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Background.(GradientBrush.GradientStops)[2].(GradientStop.Offset)"
-                                    To="0.22"
-                                    Duration="0:0:0.4">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                    Storyboard.TargetProperty="Background.(GradientBrush.GradientStops)[3].(GradientStop.Offset)"
-                                    To="0.25"
-                                    Duration="0:0:0.4">
-                                <DoubleAnimation.EasingFunction>
-                                    <CubicEase EasingMode="EaseOut"/>
-                                </DoubleAnimation.EasingFunction>
-                            </DoubleAnimation>
-                        </Storyboard>
-                    </BeginStoryboard>
                 </DataTrigger.ExitActions>
             </DataTrigger>
         </Style.Triggers>
