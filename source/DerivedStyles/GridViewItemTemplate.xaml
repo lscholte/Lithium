@@ -125,23 +125,12 @@
                                     </TextBlock>
                                 </StackPanel>
 
-                                <Viewbox VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                                <Viewbox VerticalAlignment="Center" HorizontalAlignment="Center"
                                          Margin="5"
                                          Name="GameControls"  Visibility="Collapsed">
-                                    <Border Margin="5,0,30,5"
-                                            CornerRadius="{DynamicResource ControlCornerRadiusSmall}" Padding="1">
-                                        <Border.Style>
-                                            <Style TargetType="Border">
-                                                <Setter Property="Background" Value="#87000000" />
-                                                <Setter Property="Opacity" Value="0.40" />
-                                                <Style.Triggers>
-                                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True">
-                                                        <Setter Property="Background" Value="#A6000000" />
-                                                        <Setter Property="Opacity" Value="1.0" />
-                                                    </DataTrigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Border.Style>
+                                    <Border CornerRadius="{DynamicResource ControlCornerRadiusSmall}" Padding="1"
+                                            Margin="15,0,15,0"
+                                            Background="#A6000000">
                                         <StackPanel Orientation="Horizontal">
                                             <Button Height="24" Width="24" Name="PART_ButtonPlay" VerticalAlignment="Center"
                                                     Margin="0,0,0,0"
