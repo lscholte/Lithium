@@ -28,19 +28,6 @@
                         <ContentPresenter x:Name="Content" />
                         <TextBlock x:Name="ZoomOnHoverProxy" Visibility="Collapsed"
                                    Tag="{DynamicResource GridViewCoverZoomOnHover}" />
-                        <Border x:Name="SelectionBorder" BorderThickness="3" Margin="-3"
-                                Tag="{DynamicResource GridViewCoverUseRoundedCorners}">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="CornerRadius" Value="0" />
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Mode=OneWay}" Value="True">
-                                            <Setter Property="CornerRadius" Value="{DynamicResource GridViewSelectionBorderCornerRadius}" />
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <MultiDataTrigger>
@@ -94,11 +81,7 @@
                                 </BeginStoryboard>
                             </MultiDataTrigger.ExitActions>
                         </MultiDataTrigger>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="BorderBrush" Value="{DynamicResource GridItemBackgroundBrush}" TargetName="SelectionBorder"/>
-                        </Trigger>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter Property="BorderBrush" Value="{DynamicResource GridItemBackgroundBrush}" TargetName="SelectionBorder"/>
                             <Setter Property="Canvas.ZIndex" Value="90" />
                         </Trigger>
                         <DataTrigger Binding="{Settings ShowGridItemBackground}" Value="False">
