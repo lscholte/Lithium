@@ -105,7 +105,7 @@
     
     <!-- SubmenuHeader -->
     <ControlTemplate x:Key="{x:Static MenuItem.SubmenuHeaderTemplateKey}" TargetType="{x:Type MenuItem}">
-        <Border x:Name="HoverBorder" Background="{DynamicResource MenusPopupsHoverBrush}" Margin="7,0,7,0"
+        <Border x:Name="HoverBorder" Background="{DynamicResource MenusPopupsHoverBrush}"
                 CornerRadius="{DynamicResource PopupsHoverBackgroundCornerRadius}">
             <Grid Background="Transparent">
                 <Grid.ColumnDefinitions>
@@ -173,7 +173,7 @@
 
     <!-- SubmenuItem -->
     <ControlTemplate x:Key="{x:Static MenuItem.SubmenuItemTemplateKey}" TargetType="{x:Type MenuItem}">
-        <Border x:Name="HoverBorder" Background="{DynamicResource MenusPopupsHoverBrush}" Margin="7,0,7,0"
+        <Border x:Name="HoverBorder" Background="{DynamicResource MenusPopupsHoverBrush}"
                 CornerRadius="{DynamicResource PopupsHoverBackgroundCornerRadius}">
             <Grid>
                 <Grid.ColumnDefinitions>
