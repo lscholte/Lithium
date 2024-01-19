@@ -1,35 +1,5 @@
-![DownloadCount](https://img.shields.io/github/downloads/darklinkpower/Helium/total.svg)
-# Helium
-Theme inspired by Steam for [Playnite](https://github.com/JosefNemec/Playnite) Desktop Mode.
-
-## Tips and donations
-All the work I do for Playnite extensions is and will always be free!
-
-I make extensions and themes to learn, have fun and to give to the community so donations are not required or requested. If you find the work being done useful and you are and in a position that allows it, you can consider making a tip to support the different Playnite related projects I work on, every little bit helps.
-
-<a href='https://ko-fi.com/darklinkpower' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-## Support
-
-- If you found a bug or want to request a feature, please open a new issue in the [Issues Tracker](https://github.com/darklinkpower/Helium/issues)
-- For general support, please contact me in the channel dedicated to themes support in the [Playnite Discord](https://discord.com/channels/365863063296933888/808419347105447957)
-
-## Theme goals
-- Use the Steam client as inspiration to create a polished Playnite UI.
-- Achieve a more modern and clean design with the chosen pallete and things like rounded corners in certain elements like the windows, borders, buttons and controls.
-- Improve the user experience with small animations in certain parts.
-- Change the aesthetic without affecting functionality.
-- Polish certain parts of the UI to give a better user experience.
-- Different aesthetic of other available themes available by default in Playnite and created by the community.
-- Achieve features that are not available by default on Playnite via community extensions
-
-## Installation
-Option A: Click the `Download` button in the [addon database entry here](https://playnite.link/addons.html#8b15c46a-90c2-4fe5-9ebb-1ab25ba7fcb1) to start the install process.
-
-Option B: Download the latest packaged `pthm` theme file from the [Releases page](https://github.com/darklinkpower/Helium/releases/latest) and open it.
-
-Option C: Download from the Addons browser in Playnite.
-
+# Lithium
+Lithium is a modified desktop theme for [Playnite](https://github.com/JosefNemec/Playnite) forked from the [Helium](https://github.com/darklinkpower/Helium) theme.
 
 ## Extensions support
 The theme provides extensive support for a wide range of available Playnite extensions, enhancing its functionality even further.
