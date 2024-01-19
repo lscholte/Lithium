@@ -1,6 +1,9 @@
 # Lithium
 Lithium is a modified desktop theme for [Playnite](https://github.com/JosefNemec/Playnite) forked from the [Helium](https://github.com/darklinkpower/Helium) theme.
 
+## Tips and Donations
+This is purely a personal project, so donations will not be accepted. Should you wish to donate, checkout [Helium](https://github.com/darklinkpower/Helium) and support the developer there, as Lithium is built upon Helium and would therefore not exist without it.
+
 ## Extensions support
 The theme provides extensive support for a wide range of available Playnite extensions, enhancing its functionality even further.
 
