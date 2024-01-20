@@ -129,7 +129,7 @@
                                          Name="GameControls"  Visibility="Collapsed">
                                     <Border CornerRadius="{DynamicResource ControlCornerRadiusSmall}" Padding="1"
                                             Margin="15,0,15,0"
-                                            Background="#A6000000">
+                                            Background="#D6000000">
                                         <StackPanel Orientation="Horizontal">
                                             <Button Height="24" Width="24" Name="PART_ButtonPlay" VerticalAlignment="Center"
                                                     Margin="0,0,0,0"
