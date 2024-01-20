@@ -368,9 +368,8 @@
     </Style>
 
     <Style TargetType="Button" x:Key="ButtonPlay" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonBackgroundBrush}" />
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Opacity" Value="0.80" />
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
@@ -420,7 +419,7 @@
                             <Setter Property="Visibility" Value="Visible" TargetName="DownloadIcon" />
                         </DataTrigger>
                         <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="True">
-                            <Setter Property="Opacity" Value="1.00" />
+                            <Setter Property="Foreground" Value="{DynamicResource ButtonIsMouseOverBackgroundBrush}" />
                         </DataTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -429,10 +428,9 @@
     </Style>
 
     <Style TargetType="Button" x:Key="InfoButton" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonBackgroundBrush}" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Cursor" Value="Hand" />
-        <Setter Property="Opacity" Value="0.80" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -461,7 +459,7 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Opacity" Value="1.00" />
+                <Setter Property="Foreground" Value="{DynamicResource ButtonIsMouseOverBackgroundBrush}" />
             </Trigger>
         </Style.Triggers>
     </Style>
