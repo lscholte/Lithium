@@ -24,3 +24,11 @@ Packages:
       - Removes menu item separator margin
       - Restyles grid view game borders
       - Restyles grid view game hover buttons
+  - Version: 1.0.3
+    RequiredApiVersion: 2.6.0
+    ReleaseDate: 2024-01-21
+    PackageUrl: https://github.com/lscholte/Lithium/releases/download/v1.0.3/Lithium_c2635228-430a-4ef0-9a0f-0219e1e1c53c_1_0_3.pthm
+    Changelog:
+      - Improves button styling to more clearly indicate when a button is hovered over
+      - Adds main window search bar hover/focus highlighting
+      - Improves visibility of grid view game hover buttons
