@@ -16,7 +16,7 @@
                             <ContentControl x:Name="PART_SeachIcon"
                                             IsHitTestVisible="False"
                                         ContentTemplate="{DynamicResource SearchTextIconTemplate}"
-                                        VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
+                                        VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8,0,0,0"
                                         Foreground="{DynamicResource TextBrushDarker}" />
                             <TextBox x:Name="PART_TextInpuText" Background="Transparent" BorderThickness="0"
                                  VerticalContentAlignment="Center" Padding="5,0,25,0"/>
