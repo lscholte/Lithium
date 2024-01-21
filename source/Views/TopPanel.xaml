@@ -212,11 +212,24 @@
                             </Border>
 
                             <SearchBox x:Name="PART_TextMainSearch"
-                                       Background="{DynamicResource TopPanelSearchBoxBackgroundBrush}"
                                        Margin="0,6,0,6" DockPanel.Dock="Left"
                                        WindowChrome.IsHitTestVisibleInChrome="True"
                                        MinWidth="120"
-                                       Width="{Settings DetailsListWitdh}" />
+                                       Width="{Settings DetailsListWitdh}">
+                                <SearchBox.Style>
+                                    <Style TargetType="SearchBox" BasedOn="{StaticResource {x:Type SearchBox}}">
+                                        <Setter Property="Background" Value="{DynamicResource TopPanelSearchBoxBackgroundBrush}" />
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="{DynamicResource SearchBoxIsMouseOverBackgroundBrush}" />
+                                            </Trigger>
+                                            <Trigger Property="IsFocused" Value="True">
+                                                <Setter Property="Background" Value="{DynamicResource SearchBoxIsMouseOverBackgroundBrush}" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </SearchBox.Style>
+                            </SearchBox>
                             
                             <StackPanel x:Name="PART_PanelMainItems" Orientation="Horizontal"
                                         VerticalAlignment="Stretch" Margin="0,6,0,6"/>
