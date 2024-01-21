@@ -60,6 +60,7 @@
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#67707b" />
                 <Setter Property="BorderBrush" Value="{DynamicResource GlyphBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
             </Trigger>
             <Trigger Property="IsFocused" Value="True">
                 <Setter Property="Background" Value="#67707b" />
