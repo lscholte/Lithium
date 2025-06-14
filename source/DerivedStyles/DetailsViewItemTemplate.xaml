@@ -8,7 +8,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GameListItem}">
-                    <Border Name="PART_PanelHost" Padding="10,3,0,3" Background="Transparent"
+                    <Border Name="PART_PanelHost" Padding="15,3,0,3" Background="Transparent"
                             d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">
                         <DockPanel>
                             <TextBlock Text="&#xF000;" Foreground="#67b3ff"
@@ -39,9 +39,11 @@
                                     Margin="0,0,0,0"  
                                     Opacity="0" DockPanel.Dock="Right"
                                     Height="{Binding Height, ElementName=PART_ImageIcon, Mode=OneWay}"
+                                            MaxHeight="25"
                                     RenderOptions.BitmapScalingMode="Fant" />
                             <Image Name="PART_ImageIcon"
                                    Height="{Settings DetailsViewListIconSize}"
+                                   Width="{Settings DetailsViewListIconSize}"
                                    RenderOptions.BitmapScalingMode="Fant"
                                    DockPanel.Dock="Left" Margin="0,0,8,0" />
                             <TextBlock Text="{Binding DisplayName}" TextTrimming="CharacterEllipsis" x:Name="DisplayName"

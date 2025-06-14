@@ -32,3 +32,9 @@ Packages:
       - Improves button styling to more clearly indicate when a button is hovered over
       - Adds main window search bar hover/focus highlighting
       - Improves visibility of grid view game hover buttons
+  - Version: 1.1.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-06-13
+    PackageUrl: https://github.com/lscholte/Lithium/releases/download/v1.1.0/Lithium_c2635228-430a-4ef0-9a0f-0219e1e1c53c_1_1_0.pthm
+    Changelog:
+      - Pulls changes from Helium 1.54 to 1.67 (inclusive)

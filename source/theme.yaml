@@ -1,8 +1,8 @@
-ThemeApiVersion: 2.6.0
+ThemeApiVersion: 2.8.0
 Id: Lithium_c2635228-430a-4ef0-9a0f-0219e1e1c53c
 Name: Lithium
 Author: Liam Scholte
-Version: 1.0.3
+Version: 1.1.0
 Links:
 - Name: GitHub
   Url: https://github.com/lscholte/Lithium
